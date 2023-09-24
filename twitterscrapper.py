@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import config
 from selenium import webdriver
 from urllib.parse import unquote
 from selenium import webdriver
@@ -29,7 +30,7 @@ def scrapeSearch():
                 (By.CSS_SELECTOR, 'input[autocomplete="username"]')
             )
         )
-        username.send_keys("9086564038")
+        username.send_keys(config.username)
         username.send_keys(Keys.ENTER)
 
         password = WebDriverWait(driver, 10).until(
@@ -37,7 +38,7 @@ def scrapeSearch():
                 (By.CSS_SELECTOR, 'input[name="password"]')
             )
         )
-        password.send_keys("M4d3in4byss39")
+        password.send_keys(config.password)
         password.send_keys(Keys.ENTER)
 
         time.sleep(5)
