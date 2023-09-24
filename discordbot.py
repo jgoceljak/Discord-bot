@@ -114,11 +114,11 @@ async def dice(interaction: discord.Interaction, d: str = None, t: str = None):
         embed.add_field(name="NAT 20", value="W Bozo")
     await interaction.response.send_message(embed=embed)
 
-@bot.tree.command(name="ban", description="Bans a desisgnated user")
-async def ban(interaction: discord.Interaction, user: str):
+# @bot.tree.command(name="ban", description="Bans a desisgnated user")
+# async def ban(interaction: discord.Interaction, user: str):
     
-@bot.tree.command(name="kick", description="Kicks a desisgnated user")
-async def kick(interaction: discord.Interaction, user: str):
+# @bot.tree.command(name="kick", description="Kicks a desisgnated user")
+# async def kick(interaction: discord.Interaction, user: str):
 
 @bot.tree.command(
     name="twittersearch",
